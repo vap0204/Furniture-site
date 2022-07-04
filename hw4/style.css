@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Montserrat:wght@100;200&family=Pinyon+Script&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Montserrat:wght@100;200&family=Philosopher&family=Pinyon+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #c0aa61;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding-top: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(22,1fr);
+    grid-auto-rows:2rem;
+    gap: 0.8rem;
+}
+
+/*NAV START*/
+
+.logo{
+    grid-column: 1/2;
+    grid-row: 1;
+    color: var(--main-color);
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.logo span{
+    letter-spacing: 0.5rem;
+}
+
+.nav{
+    grid-column: 2/10;
+    grid-row: 1;
+    font-family: 'Philosopher',cursive;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav ul li,.nav-products ul li{
+   margin: 1rem;
+}
+
+.nav ul li a ,.nav-products ul li a{
+    color: black;
+    font-size: 1rem;
+}
+
+.nav a:hover{
+    color: var(--main-color);
+}
+
+.icons-bar{
+    grid-column: 11/23;
+    grid-row: 1;
+    text-align: left;
+}
+
+.general-icons{
+    display: flex;
+    padding-right:1rem ;
+    justify-content:flex-end;
+    flex-direction: row;
+}
+
+.general-icons a{
+    margin-left: 0.8rem;
+}
+
+.general-icons span{
+  margin-top: 6px;
+  color: rgba(0, 0, 0, 0.7)
+}
+/*NAV End*/
+
+/*MAIN header Start*/
+.main-section-conrainer{
+    grid-column: 1/23;
+    grid-row: 2/14;
+    background: url('images/cover.jpg');
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.main-section-items{
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+    width: 50%;
+    text-align: center;
+}
+
+.main-section-items h1{
+    font-family: 'Pinyon Script', cursive;
+    color: var(--main-color);
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.symbols{
+    color: rgba(174, 169, 169, 0.3);
+    font-weight: 100;
+}
+
+.main-section-items span{
+    font-family: 'Philosopher',cursive;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 50px;
+}
+
+.main-section-button{
+    width: 50%;
+    text-align: center;
+}
+
+.main-section-button button{
+    background: var(--main-color);
+    border: unset;
+    padding: 8px 25px;
+    font-family: 'Philosopher',cursive;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.main-section-button button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*MAIN header end*/
+
+/*Sale30 Start*/
+    .box1{
+        grid-row: 15/23;
+        grid-column: 2/10;
+        background: url('images/cchair.jpg');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    .items-bx1{
+        margin-top: 18rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .items-bx1 h3,.items-bx4 h3,.items-bx8 h3{
+        font-family: 'Pinyon Script', cursive;
+        color: var(--main-color);
+        letter-spacing: 0.4rem;
+    }
+    .items-bx1 span,.items-bx4 span,.items-bx8 span{
+        font-family: 'Philosopher',cursive;
+        font-size: 1.2rem;
+        letter-spacing: 0.5rem;
+        font-weight: 600;
+    }
+
+    .items-bx1:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .box2{
+        grid-row: 15/20;
+        grid-column: 10/15;
+        background: url('images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    .box3{
+        grid-row: 15/20;
+        grid-column: 15/21;
+        background: url('images/inside-weather-dbH_vy7vICE-unsplash\ \(1\).jpg');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    .box4{
+        grid-row: 23/28;
+        grid-column: 2/10;
+        background: url('images//116679\ HH\ Corporate\ Brand\ New\ Brand\ Ad\ Website\ UPDATING\ EXISTING\ WORK11.jpg');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    .items-bx4{
+        margin-top: 8rem;
+        width: 70%;
+        float:right;
+        padding: 1.5rem;
+        text-align: right;
+    }
+   
+    .items-bx4:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .box5{
+        grid-row: 20/26;
+        grid-column: 10/21;
+        background: url('images/chair.jpg');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+    .items-bx5{
+        width: 40%;
+        border: 1px dotted grey;
+        margin: 3rem;
+        text-align: center;
+    }
+    
+    .items-bx5 h3{
+         font-family: 'Pinyon Script', cursive;
+         color: silver;
+         letter-spacing: 0.2rem;
+    }
+
+    .number{
+        font-size: 3rem;
+        color: var(--main-color);
+        letter-spacing: 1rem;
+        font-family:'Philosopher';
+        font-weight: 700;
+        
+    }
+    .percent{
+        font-size: 3rem;
+        color:grey;
+        font-family:'Philosopher';
+        font-weight: 700;
+    }
+    .box6{
+        grid-row: 28/33;
+        grid-column: 2/6;
+        background: url('images/kam-idris-_HqHX3LBN18-unsplash.jpg');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+    .sale{
+        font-size: 3rem;
+        color: rgb(52, 51, 51);
+        letter-spacing: 1rem;
+        font-family:'Philosopher';
+        font-weight: 700;
+    }
+
+    .items-bx5:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .box7{
+        grid-row: 28/33;
+        grid-column:6/10;
+        background: url('images/adam-winger-5zX1KAjPl4o-unsplash.jpg');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    .box8{
+        grid-row: 26/33;
+        grid-column: 10/21;
+        background: url('images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering_41470-1782.webp');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    .items-bx8{
+        margin-top: 12rem;
+        width: 70%;
+        float:left;
+        padding: 1.5rem;
+        text-align: left;
+        padding: 2rem;
+    }
+
+    .items-bx8:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+/*Sale30 END*/
+
+/*SectionWPrices Start*/
+.h-new-products{
+    grid-row: 34/35;
+    grid-column: 1/23;
+    justify-content: center;
+    text-align: center;
+}
+
+.h-new-products h2,.best-sellers-heading h3 ,.l-items h3,.blogh{
+    font-family: 'Pinyon Script', cursive;
+    color: var(--main-color);
+    font-size: 2rem;
+    letter-spacing: 0.7rem;
+}
+
+.h-new-products span,.best-sellers-heading span ,.union,.blogs{
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-family: 'Philosopher', cursive;
+}
+
+.nav-products{
+    grid-row: 36/37;
+    grid-column: 1/23;
+    justify-content: center;
+}
+
+.nav-products ul{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-products a:hover{
+    color: var(--main-color);
+}
+.bx1{
+    grid-row: 38/46;
+    grid-column: 2/6;
+}
+
+.bx2{
+    grid-row: 38/46;
+    grid-column: 7/11;
+}
+
+.bx3{
+    grid-row: 38/46;
+    grid-column: 12/16;
+}
+
+.bx4{
+    grid-row: 38/46;
+    grid-column: 17/21;
+}
+
+.bx5{
+    grid-row: 46/54;
+    grid-column: 2/6;
+}
+
+.bx6{
+    grid-row: 46/54;
+    grid-column: 7/11;
+}
+
+
+.bx7{
+    grid-row: 46/54;
+    grid-column: 12/16;
+}
+
+
+.bx8{
+    grid-row: 46/54;
+    grid-column: 17/21;
+}
+
+.img{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 0.5rem;
+}
+
+.text{
+    color: silver;
+    font-family: 'Philosopher',cursive;
+}
+
+.review{
+    display:flex;
+    margin-top: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.black{
+    color: black;
+}
+
+.price{
+    padding-right: 0.5rem;
+    color: var(--main-color);
+    font-family: 'Philosopher', cursive;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.icons-container{
+    margin-top: 1rem;
+}
+.golden{
+    color: white;
+    background-color:var(--main-color);
+}
+
+.img-gold{
+    border: 1px solid #c0aa61;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px #c0aa61;
+    height: 80%;
+}
+.img-gold img{
+    width: 100%;
+    height: 100%;
+}
+.img{
+    border: 1px solid silver;
+    box-shadow: 1px 1px 1px 1px silver;
+    width: 100%;
+    height: 80%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.icons i{
+    border: 1px solid silver;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.view-button-grid{
+    grid-row: 55/56;
+    grid-column: 1/23;
+    justify-content: center;
+    text-align: center;
+}
+
+.view-button-grid button{
+    padding: 13px 23px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Philosopher', cursive;
+}
+
+.view-button-grid button:hover{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*SectionWPrices END*/
+/*SECTIONDATA START*/
+.section-container{
+    grid-row:57/73 ;
+    grid-column: 1/23;
+    background-color: #eee;
+}
+
+.date-inside{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: 'Philospopher', cursive;
+}
+
+.bold{
+    font-weight: bold;
+    font-family:'Philosopher';
+    font-size: 2rem;
+}
+
+.l-items{
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 6rem;
+    padding-left: 2rem;
+}
+
+.goldie{
+    color: var(--main-color);
+}
+
+.silver{
+    color: gray;
+    font-family: 'Philospopher';
+    font-weight: 600;
+}
+
+.date1{
+    text-align: center;
+    display: flex;
+    padding: 3rem 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 50% ;
+}
+
+.date2{
+    text-align: center;
+    display: flex;
+    padding: 4rem 1rem ;
+    margin-right: 1rem;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 50% ;
+}
+
+.date3{
+    text-align: center;
+    display: flex;
+    padding: 4rem 0.2rem ;
+    margin-right: 1rem;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 40% ;
+}
+
+.date4{
+    text-align: center;
+    display: flex;
+    padding-top: 4rem ;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 40% ;
+}
+
+.l-items button{
+    padding: 13px 23px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 4rem;
+    font-family: 'Philosopher', cursive;
+}
+
+.l-items button:hover{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.r-items{
+    width: 50%;
+    float: right;
+    text-align: center;
+    margin-top: 6rem;
+    padding-left: 2rem;
+}
+
+.img-container{
+    display: flex;
+    float: right;
+    height: 40%;
+    width: 80%;
+    margin-right: 3rem;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*SECTIONDATA END*/
+
+/*BEST SELLERS START*/
+
+.best-sellers-heading{
+    grid-row: 77/78;
+    grid-column: 1/23;
+   margin: 3rem 0;
+   text-align: center;
+}
+
+
+
+.best-sellers-container{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows:2rem;
+    gap: 2rem;
+
+    
+}
+.best1{
+    grid-row: 1/15;
+    grid-column: 3/6;
+}
+
+.best2{
+    grid-row: 1/7;
+    grid-column: 6/8;
+}
+
+.best3{
+    grid-row: 1/7;
+   grid-column: 8/10;
+}
+
+.best4{
+    grid-row: 7/13;
+    grid-column: 6/8;
+}
+
+.best5{
+    grid-row: 7/13;
+    grid-column: 8/10;
+}
+
+.bestbutton{
+   grid-row: 13/14;
+   grid-column: 1/11;
+   text-align: center;
+}
+
+.bestbutton button{
+    padding: 13px 23px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Philosopher', cursive;
+}
+
+.bestbutton button:hover{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*BEST SELLERS END*/
+
+/*LAST BLOG START*/
+
+.last-bologs-container{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows:2rem;
+    gap: 2rem;
+}
+
+.silver-container{
+    grid-row: 1/2;
+    grid-column: 1/11;
+    background: #eee;
+    min-height: 600px;
+}
+
+.blog-heading{
+    grid-row: 1/2;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.blog1-container{
+  grid-row: 4/5;
+  grid-column: 3/6;
+}
+.blog1{
+  padding-top: 2rem;
+  width: 50%;
+  display: block;
+  float: left;
+  background: #eee;
+}
+
+.text-blog{
+   text-align: center;
+}
+.img-blog{
+    width: 50%;
+    margin: 0 auto;
+    height: 80%;
+}
+
+.img-blog img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-blog h3{
+    font-family: 'Philosopher',cursive;
+    color: grey;
+    letter-spacing: 0.3rem;
+    margin:0.5rem 0;
+}
+
+.date-blog{
+    font-family: 'Philosopher', cursive;
+    font-size:0.7rem;
+    letter-spacing: 0.3rem;
+    color: silver;
+}
+
+.blog2{
+    padding-top: 2rem;
+    width: 50%;
+    display: block;
+    float: right;
+    background: #eee;
+  }
+  
+  .text-blog a{
+    color: gray;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+  }
+
+/*LAST BLOG END*/
+
+/*FOOTER START*/
+.footer-container{
+    font-family: 'Philosopher'cursive;
+    clear: both;
+    justify-content: space-evenly;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.col1f{
+    padding: 2rem;
+}
+
+.addres{
+    padding-left:2rem ;
+}
+
+.addres span{
+    color: gray;
+}
+
+.col2f{
+    padding: 2rem;
+    float: left;
+}
+
+.col2f ul {
+    list-style: none;
+}
+
+.col2f ul li{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.col2f a ,.col3f a,.col4f a{
+    text-decoration: none;
+    color: gray;
+}
+
+.col2f a:hover{
+    color: var(--main-color);
+}
+
+.col3f{
+    padding: 2rem;
+    float: left;
+}
+
+.col3f ul {
+    list-style: none;
+}
+
+.col3f ul li{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.col3f a{
+    text-decoration: none;
+}
+
+.col3f a:hover{
+    color: var(--main-color);
+}
+
+.col4f{
+    padding: 2rem;
+    float: left;
+}
+
+.navf4{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 0.4rem;
+    grid-auto-rows: 1rem;
+}
+
+.fb1{
+    border:1px dashed silver;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    padding: 10px;
+}
+
+.fb2{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 1/3;
+    grid-column: 3/5;
+    padding: 10px;
+}
+
+.fb3{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 1/3;
+    grid-column: 5/7;
+    padding: 10px;
+}
+
+.fb4{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 3/5;
+    grid-column: 1/4;
+    padding: 10px;
+}
+
+.fb5{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 3/5;
+    grid-column: 4/6;
+    padding: 10px;
+}
+
+.fb6{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 3/5;
+    grid-column: 6/8;
+    padding: 10px;
+}
+
+.fb7{
+    border:1px dashed silver;
+    grid-row: 5/7;
+    grid-column: 1/3;
+    text-align: center;
+    padding: 10px;
+}
+
+.fb8{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 5/7;
+    grid-column: 3/5;
+    padding: 10px;
+}
+
+.fb9{
+    border:1px dashed silver;
+    text-align: center;
+    grid-row: 5/7;
+    grid-column: 5/7;
+    padding: 10px;
+}
+
+.fb1 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb2 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb3 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb4 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb5 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb6 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb7 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb8 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fb9 a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.sidenav ul li{
+    margin: 1rem;
+ }
+ 
+ .sidenav ul li a {
+     color: black;
+     font-size: 1rem;
+ }
+ 
+.navf{
+    display: flex;
+    font-family: 'Philosopher' cursive;
+    color: silver;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sidenav{
+    border-bottom: 1px solid #eee;
+   
+}
+
+.navf ul li a{
+    color: silver;
+}
+
+.navf ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+ .sidenav a:hover{
+     color: var(--main-color);
+ }
+ 
+ .copyright{
+    width: 100%;
+    color: gray;
+    text-align: center;
+    font-family: 'Philosopher' cursive;
+    letter-spacing: 0.1rem;
+    padding: 1rem 0;
+ }
+
+ .copyright a{
+    color: var(--main-color);
+ }
+/*FOOTER END*/
